@@ -1,70 +1,72 @@
-<body><h1 id='temp:C:MTX06283366747648e595668b93b'>A-HLS Create Event Workflow - Documentation </h1>
+![](/images/ahlsbanner.png)
+<h1>A-HLS Create Event Workflow - Documentation</h1>
 
-<i>A quick OmniScript that can be placed on various object record pages to quickly create events that are related to the current record.</i><br/>
+A quick OmniScript that can be placed on various object record pages to quickly create events that are related to the current record.
 
-<h2 id='temp:C:MTX49d4577c6edd4f6387d81f018'>Overview</h2>
+<h2>Overview</h2>
 
-Events are a powerful tool for keeping on top of customer relationships and closing deals. By using event records, you and your sales teams can keep better track of your calendars. This helper is a process which allows users to create such events quickly. <br/>
+Events are a powerful tool for keeping on top of customer relationships and closing deals. By using event records, you and your sales teams can keep better track of your calendars. This helper is a process which allows users to create such events quickly. 
 
-<h4 id='temp:C:MTX819a2cada6c64488a94696f30'><span style="color:#333333" textcolor="#333333">Use Case Scenario</span></h4>
+<h2>Use Case Scenario</h2>
 
-<span style="color:#333333" textcolor="#333333">As a user of the application I need to be able to create an event quickly. </span><br/>
+As a user of the application I need to be able to create an event quickly. 
 
-<hr style='width:100%'><h2 id='temp:C:MTXd5044fc681f34293b99dc895b'><span style="color:#333333" textcolor="#333333">Business Value and Benefits</span></h2>
+<h2>Business Value and Benefits</h2>
 
-<div style="" data-section-style='5' class=""><ul id='temp:C:MTX9ff20c7f52fc41d4908f503a5'><li id='temp:C:MTX2d1447a1e1db40bb9be9e037f' class='' value='1'>Reduction in the time and cost pertaining to the event creation. 
+* Reduction in the time and cost pertaining to the event creation. 
+* Increased efficiency in managing multiple events. 
 
-<br/></li><li id='temp:C:MTX590a1eda12564ab788a673e5a' class=''>Increased efficiency in managing multiple events. 
 
-<br/></li></ul></div><hr style='width:100%'><h2 id='temp:C:MTX8d3a631a73b247c4872074aec'>Package Includes</h2>
+<h2>Package Includes</h2>
 
-<h3 id='temp:C:MTX7c6cf3505872452faa12dd2e3'><br><b><span style="color:#333333" textcolor="#333333">OmniScript (1)</span></b></h3>
 
-<div style="" data-section-style='5' class=""><ul id='temp:C:MTX49d7c7db76e84626ba390df8e'><li id='temp:C:MTX6a5b3c525a8941358808b38f9' class='' value='1'><span style="color:#181818" textcolor="#181818">createevent</span>
+*OmniScript (1)*
 
-<br/></li></ul></div><h3 id='temp:C:MTX7f539ca67acf41dc873e29ea6'><b>DataRaptor (6)</b></h3>
+* createevent
 
-<div style="" data-section-style='5' class=""><ul id='temp:C:MTX970963cf42c44bf086ffc6677'><li id='temp:C:MTX98bde216ce104956b1c06b64f' class='' value='1'>ContactCenterContectObjectIDExtract
+*DataRaptor (6)*
 
-<br/></li><li id='temp:C:MTX839812508eb946c4bd28c0f9d' class=''>ContactCenterCreateEvent
+* ContactCenterContectObjectIDExtract
+* ContactCenterCreateEvent
 
-<br/></li></ul></div><hr style='width:100%'><h2 id='temp:C:MTX370d4ce4e73e40cb95a81153f'>Configuration Requirements</h2>
 
-<h3 id='temp:C:MTXb428138961894e2a81e47728e'>Installation Instructions:</h3>
+<h2>Configuration Requirements</h2>
 
-The following steps are required for installation.<br/>
+<h3>Installation Instructions:</h3>
 
-<h4 id='temp:C:MTXcbebc84edf5549ae8814afe09'>Install the Data Pack</h4>
+1. Follow the download steps presented on the Accelerate HLS website for this Accelerator. 
+    1. Alternatively, you may download the Data Pack folder in the following GitHub repository: https://github.com/HLS-Accelerate/contact-center-event
 
-<div style="" data-section-style='6' class=""><ul id='temp:C:MTX624734a9baab483596b2ffbd8'><li id='temp:C:MTX2d548441c4cd4e1cbc7501344' class='' value='1'>The Data Pack folder in the following GitHub repository contains one (1) DPA Data Pack. Please download the Data Pack and save them to your desktop: <a href="https://github.com/HLS-Accelerate/contact-center-event">https://github.com/HLS-Accelerate/contact-center-event</a>
+1. Then, complete the following steps to import them into your Salesforce org.
+    1. To Import, in your destination Salesforce org, Click on *App Launcher* → Search for '*OmniStudio DataPacks*' and click on it.
+    2. Click on '*Installed*' and on the right side click on '*Import from*'.
+    3. Select '*From File*' - When the window opens, select the Data Pack file that you downloaded and stored on your machine. Click '*Install*'.
+    4. When prompted to Activate the OmniScript, choose *Not Now*.
 
-<br/></li><li id='temp:C:MTXf630416a95664fae800401b6d' class='parent'>Then, complete the following steps to import them into your Salesforce org.
+<h3>Post-Install Configuration Steps:</h3>
 
-<br/></li><ul><li id='temp:C:MTXfdbb5a8c80eb4c03955d1364d' class=''>To Import, in your destination Salesforce org, Click on <b>App Launcher</b> → Search for '<b>OmniStudio DataPacks</b>' and click on it.
-
-<br/></li><li id='temp:C:MTXa893d6bcec5f40fba49c87488' class=''>Click on '<b>Installed</b>' and on the right side click on '<b>Import from</b>'.
-
-<br/></li><li id='temp:C:MTXd2452377b43a4615b3b3583f7' class=''>Select '<b>From File</b>' - When the window opens, select the Data Pack file that you downloaded and stored on your machine. Click '<b>Install</b>'.
-
-1. You will need to supply your own Google Maps API key to use the Google API in the Address field.  
-    1. ![](/Images/API_Key_1.png)
+1. Click on *App Launcher* → Search for “OmniScripts”
+    1. Navigate to the recently installed OmniScript in the list view
+    2. Click on the dropdown at the right of the OmniScript and select *Activate*.
+    3. For more information regarding activating Omniscripts, please see this article: https://docs.vlocity.com/en/Activating-OmniScripts.html
+2. Add the installed OmniScript to the lightning page layout of your choosing. 
+    1. Refer to this article for more information regarding adding OmniScripts to a Lightning or Experience page: https://docs.vlocity.com/en/Adding-an-LWC-OmniScript-to-a-Community-or-Lightning-Page.html
+3. You will need to supply your own Google Maps API key to use the Google API in the Address field.  
+![](/images/API_Key_1.png)
     2. If you wish not to use the Google Maps API or do not have an API Key you can simply turn it off by deselecting the “Enable Google Maps Autocomplete” checkbox.
-        1. ![](/Images/API_Key_2.png)
+![](/images/API_Key_2.png)
 
 
+<h2>Assumptions</h2>
 
-<br/></li></ul></ul></div><hr style='width:100%'><h2 id='temp:C:MTX175e15e58fd4400e949a5ef76'><span style="color:#333333" textcolor="#333333">Assumptions</span></h2>
+* A customer has licenses for Health Cloud, and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
+* A customer is assuming Salesforce Lightning Experience — not Classic.
+* Data Model elements that are part of the HINS (Vlocity) Managed package and Health Cloud are all available.
+* The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved. 
 
-<div style="" data-section-style='5' class=""><ul id='temp:C:MTXe119b039904b4217810f4e4a6'><li id='temp:C:MTX630d746d1a7c48bfa9d4e3611' class='' value='1'>A customer has licenses for Health Cloud, and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
 
-<br/></li><li id='temp:C:MTXb5a8af7c3cd74ea9aa9278bc0' class=''>A customer is assuming Salesforce Lightning Experience — not Classic.
+<h2>Revision History</h2>
 
-<br/></li><li id='temp:C:MTXcbed4ea8f8ce436e860657d57' class=''>Data Model elements that are part of the HINS (Vlocity) Managed package and Health Cloud are all available.
+* Initial Release - June 21, 2022 
+* Updated documentation - September 26, 2022
 
-<br/></li><li id='temp:C:MTX4cfb6c1b89034f08ae6565715' class=''>The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved. 
-
-<br/></li></ul></div><hr style='width:100%'><h2 id='temp:C:MTX58ad772f6416491c989ae82ef'>Revision History</h2>
-
-<div style="" data-section-style='5' class=""><ul id='temp:C:MTXfdcd36fa84ac4b76a842a52dd'><li id='temp:C:MTX3259488fd4f742f0a5bb63812' class='' value='1'>June 21, 2022 
-
-<br/></li></ul></ul></div></body>
