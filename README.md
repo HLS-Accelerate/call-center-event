@@ -52,9 +52,9 @@ As a user of the application I need to be able to create an event quickly.
 2. Add the installed OmniScript to the lightning page layout of your choosing. 
     1. Refer to this article for more information regarding adding OmniScripts to a Lightning or Experience page: https://docs.vlocity.com/en/Adding-an-LWC-OmniScript-to-a-Community-or-Lightning-Page.html
 3. You will need to supply your own Google Maps API key to use the Google API in the Address field.  
-![](/images/API_Key_1.png)
+![](/images/APIKey1.png)
     2. If you wish not to use the Google Maps API or do not have an API Key you can simply turn it off by deselecting the “Enable Google Maps Autocomplete” checkbox.
-![](/images/API_Key_2.png)
+![](/images/APIKey2.png)
 
 
 <h2>Assumptions</h2>
