@@ -46,6 +46,13 @@ The following steps are required for installation.<br/>
 
 <br/></li><li id='temp:C:MTXd2452377b43a4615b3b3583f7' class=''>Select '<b>From File</b>' - When the window opens, select the Data Pack file that you downloaded and stored on your machine. Click '<b>Install</b>'.
 
+1. You will need to supply your own Google Maps API key to use the Google API in the Address field.  
+    1. ![](/Images/API_Key_1.png)
+    2. If you wish not to use the Google Maps API or do not have an API Key you can simply turn it off by deselecting the “Enable Google Maps Autocomplete” checkbox.
+        1. ![](/Images/API_Key_2.png)
+
+
+
 <br/></li></ul></ul></div><hr style='width:100%'><h2 id='temp:C:MTX175e15e58fd4400e949a5ef76'><span style="color:#333333" textcolor="#333333">Assumptions</span></h2>
 
 <div style="" data-section-style='5' class=""><ul id='temp:C:MTXe119b039904b4217810f4e4a6'><li id='temp:C:MTX630d746d1a7c48bfa9d4e3611' class='' value='1'>A customer has licenses for Health Cloud, and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
