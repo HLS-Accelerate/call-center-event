@@ -48,9 +48,9 @@ As a user of the application I need to be able to create an event quickly.
 1. Click on *App Launcher* → Search for “OmniScripts”
     1. Navigate to the recently installed OmniScript in the list view
     2. Click on the dropdown at the right of the OmniScript and select *Activate*.
-    3. For more information regarding activating Omniscripts, please see this article: https://docs.vlocity.com/en/Activating-OmniScripts.html
+    3. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
 2. Add the installed OmniScript to the lightning page layout of your choosing. 
-    1. Refer to this article for more information regarding adding OmniScripts to a Lightning or Experience page: https://docs.vlocity.com/en/Adding-an-LWC-OmniScript-to-a-Community-or-Lightning-Page.html
+    1. Refer to this article for more information regarding adding OmniScripts to a Lightning or Experience page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
 3. You will need to supply your own Google Maps API key to use the Google API in the Address field.  
 ![](/images/APIKey1.png)
     2. If you wish not to use the Google Maps API or do not have an API Key you can simply turn it off by deselecting the “Enable Google Maps Autocomplete” checkbox.
